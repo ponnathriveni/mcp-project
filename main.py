@@ -3,11 +3,11 @@ from agent import research
 
 main = FastAPI()
 
-@app.get("/")
+@main.get("/")
 def home():
     return {"message": "Autonomous Research Agent"}
 
-@app.post("/research")
+@main.post("/research")
 def research_api(topic: str):
 
     result = research(topic)
