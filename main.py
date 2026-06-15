@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from agent import research
 
-app = FastAPI()
+main = FastAPI()
 
 @app.get("/")
 def home():
